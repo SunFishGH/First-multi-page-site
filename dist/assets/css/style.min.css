@@ -421,6 +421,7 @@ body {
 
 .sidebar__content {
   padding: 0 2rem;
+  margin-top: -5rem;
 }
 
 .sidebar__footer {
@@ -446,6 +447,7 @@ body {
   width: 10rem;
   height: 10rem;
   margin: 0 auto 2rem;
+  position: relative;
   border: 2px solid #fff;
   box-shadow: 0 7px 20px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
