@@ -9,6 +9,7 @@ body {
     background-color: black;
     font-size: 1.4rem;
     color: $white;
+    line-height: 1.5;
 }
 
 *,
@@ -23,4 +24,7 @@ body {
 @import "blocks/header";
 @import "blocks/sidebar";
 @import "blocks/main";
-@import "blocks/container"
+@import "blocks/container";
+@import "blocks/profile";
+@import "blocks/social";
+@import "blocks/btn";
