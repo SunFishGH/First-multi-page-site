@@ -6,7 +6,7 @@ html{
 
 body {
     font-family: system-ui,-apple-system,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: black;
+    background-color: #181818;
     font-size: 1.4rem;
     color: $white;
     line-height: 1.5;
@@ -33,3 +33,6 @@ body {
 @import "blocks/btn";
 @import "blocks/stories";
 @import "blocks/add-post";
+@import "blocks/post";
+@import "blocks/embed";
+@import "blocks/pagination";
