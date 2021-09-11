@@ -1,0 +1,151 @@
+---
+layout: default
+title: Post
+---
+
+
+<article class="post">
+    <div class="post__actions">
+        <a href="index.html">вернуться назад</a>
+        <a href="#">
+            поделиться<img class="post__actions-icon" src="assets/images/repost.svg" alt="поделиться">
+        </a>   
+    </div>
+
+    <div class="post__header">
+        <h1 class="post__title post__title--mb0">
+            Lorem ipsum dolor sit amet.
+        </h1>
+        
+        <ul class="post__data">
+            <li class= "post__data-item">
+                <time datetime="20201-09-10">10.09.2021</time>
+            </li>
+            <li class="post__data-item">
+                <a href="#">
+                    Жмакни сюда
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="post__content">
+        <div class="post__text">
+            <h2>Title h2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias soluta doloribus fugit culpa accusamus eum, eaque dolore itaque facere?</p>
+
+            <h3>Title h3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias soluta doloribus fugit culpa accusamus eum, eaque dolore itaque facere?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias soluta doloribus fugit culpa accusamus eum, eaque dolore itaque facere?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#" alt="">Error alias</a> Error alias soluta doloribus fugit culpa accusamus eum, eaque dolore itaque facere?</p>
+
+            <p>
+                <img src="assets/images/posts/postImg1.jpg" alt="">
+            </p>
+
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+
+            <ol>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+
+        </div><!--End Post-text-->
+
+        <div class="related">
+            <h3 class="post__subtitle">Интересно почитать</h3>
+
+            <ul class="related__list">
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="#">
+                            Заголовок ссылки 1
+                        </a>
+                    </h4>
+                    <time class="related__list-date" datetime="2021-09-11"> 11.09.2021</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="#">
+                            Заголовок ссылки 2
+                        </a>
+                    </h4>
+                    <time class="related__list-date" datetime="2021-09-11"> 11.09.2021</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="#">
+                            Заголовок ссылки 3
+                        </a>
+                    </h4>
+                    <time class="related__list-date" datetime="2021-09-11"> 11.09.2021</time>
+                </li>
+                <li class="related__list-item">
+                    <h4 class="related__list-title">
+                        <a href="#">
+                            Заголовок ссылки 4
+                        </a>
+                    </h4>
+                    <time class="related__list-date" datetime="2021-09-11"> 11.09.2021</time>
+                </li>
+            </ul>
+        </div><!--End related-->
+
+        <div>
+            <h3 class="post__subtitle">Обсуждение</h3>
+
+            <form class="form" action="/" method="post">
+                <div class="form__group">
+                    <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст комментария"></textarea>
+                    <span class="form__line"></span>
+                </div>
+                <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+            </form>
+
+            <ul class="comments">
+                <li class="comments__item">
+                    <div class="comments__header">
+                        <img class="comments__avatar" src="https://via.placeholder.com/30" alt="">
+
+                        <div class="comments__author">
+                            <div class="comments__name">Денис Тимофеев</div>
+                            <time class="comments__pubdate" datetime="2021-09-11">1 неделю назад</time>
+                        </div>
+                    </div>
+                    <div class="comment__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, numquam!</div>
+                    <button class="comments__reply" type="button">Ответить</button>
+
+                    <ul class="comments">
+                        <li class="comments__item">
+                            <div class="comments__header">
+                                <img class="comments__avatar" src="https://via.placeholder.com/30" alt="">
+        
+                                <div class="comments__author">
+                                    <div class="comments__name">Денис Тимофеев</div>
+                                    <time class="comments__pubdate" datetime="2021-09-11">1 неделю назад</time>
+                                </div>
+                            </div>
+                            <div class="comment__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, numquam!</div>
+                            <button class="comments__reply" type="button">Ответить</button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+    </div><!--End Post-content-->
+</article><!--End Post-->
