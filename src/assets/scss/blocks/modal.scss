@@ -1,0 +1,24 @@
+.modal{
+    display: flex;
+    text-decoration: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background-color:rgba($black, .8);
+
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: $z-index-modal;
+}
+
+.modal__content{
+    width: 100%;
+    max-width: 500px;
+    padding: 8rem 8rem 2.5rem;
+
+    background-color: $primary;
+
+}
