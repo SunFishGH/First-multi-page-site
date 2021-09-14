@@ -14,7 +14,7 @@
     
     <title>Post</title>
 </head>
-<body class="no-scroll">
+<body class="show-sidebar">
 
     <div class="page">
         <header class="header">
@@ -49,7 +49,11 @@
                         </li>
                     </ul>
                 </nav>
+                <button class="burger" type="button">
+                    <span></span>
+                </button>
             </div>
+        
             <div class="header__right">
                 <nav class="nav">
                     <ul class="nav__list">
@@ -68,48 +72,78 @@
         </header>
 
         <aside class="sidebar">
-            <aside class="sidebar">
-                <div class="sidebar__header">
-                    <img src="assets/images/sidebar-header.jpg" alt="sidebar-header">
-                </div>
-                <div class="sidebar__content">
-                    <div class="profile">
-                        <img class="profile__avatar" src="https://via.placeholder.com/100" alt="">
+            <div class="sidebar__header">
+                <img src="assets/images/sidebar-header.jpg" alt="sidebar-header">
+            </div>
+            <div class="sidebar__content">
+                <div class="profile">
+                    <img class="profile__avatar" src="https://via.placeholder.com/100" alt="">
+                    <div class="profile__header">            
                         <div class="profile__name">Тимофеев Денис</div>
                         <div class="profile__prof">Блог разрботчика</div>
-            
-                        <ul class="social">
-                            <li class="social__component">
-                                <a class="social__links">
-                                    <img src="assets/images/inst.svg" alt="instagram">
-                                </a>
-                            </li>
-            
-                            <li class="social__component">
-                                <a class="social__links">
-                                    <img src="assets/images/inst.svg" alt="instagram">
-                                </a>
-                            </li>
-            
-                            <li class="social__component">
-                                <a class="social__links">
-                                    <img src="assets/images/inst.svg" alt="instagram">
-                                </a>
-                            </li>
-                        </ul>
-            
-                        <div class="profile__text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis eius fuga magnam ipsam iusto voluptatum similique dolorum mollitia aliquid!</p>
-                        </div>
-            
                     </div>
+                    <ul class="social">
+                        <li class="social__component">
+                            <a href="#" class="social__links">
+                                <img src="assets/images/inst.svg" alt="instagram">
+                            </a>
+                        </li>
+        
+                        <li class="social__component">
+                            <a href="#" class="social__links">
+                                <img src="assets/images/inst.svg" alt="instagram">
+                            </a>
+                        </li>
+        
+                        <li class="social__component">
+                            <a href="#" class="social__links">
+                                <img src="assets/images/inst.svg" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <div class="profile__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos perspiciatis eius fuga magnam ipsam iusto voluptatum similique dolorum mollitia aliquid!</p>
+                    </div>
+        
                 </div>
-            
-                <div class="sidebar__footer">
-                    <a class="btn btn--red" href="works.html">Мои работы</a>
-                    <button class="btn btn--blue" type="button">Написать мне</button>
-                </div>
-            </aside>        </aside>
+                
+                <nav class="nav nav--mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link has-subnav" href="#">Статьи</a>
+        
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="#">Создание сайтов</a>
+                                </li>
+        
+                                <li>
+                                    <a class="subnav__link" href="#">Ничегонеделание</a>
+                                </li>
+        
+                                <li>
+                                    <a class="subnav__link" href="#">Позже придумаю</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="text.html">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Реклама</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sidebar__footer">
+                <a class="btn btn--red" href="works.html">Мои работы</a>
+                <button class="btn btn--blue" type="button">Написать мне</button>
+            </div>
+        </aside>
 
         <main class="main">
             <div class="container">
@@ -266,12 +300,9 @@
 
     </div>
 
-    <!--<div class="modal">
-        <div class="modal__content">
-    
-        </div>
+    <div class="modal">
+        <video class="modal__video" src="" poster="https://via.placeholder.com/420x580"></video>
     </div>
-    -->
     <script src="assets/js/app.js"></script>
 </body>
 </html>

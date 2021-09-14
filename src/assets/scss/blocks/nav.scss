@@ -1,5 +1,20 @@
+.nav{
+    @include breakpoint($tablet-bp){
+        display: none;
+    }
+
+    &--mobile{
+        display: block;
+    }
+}
+
 .nav__list{
     display:flex;
+
+    @include breakpoint($tablet-bp){
+        flex-direction: column;
+
+    }
 }
 
 .nav__item{
@@ -41,5 +56,9 @@
             border-width: 6px 5px 0 5px;
             border-color: $white transparent transparent transparent;
         }
+    }
+
+    @include breakpoint($tablet-bp){
+        font-size: 1.6rem;
     }
 }
