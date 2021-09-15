@@ -4,6 +4,9 @@
     @include breakpoint($tablet-bp){
         margin-top: 4rem;
         position: relative;
+
+        border-bottom: 1px solid #1c1c1c;
+        margin-bottom: 1.5rem;
     }
 }
 .profile__avatar{
