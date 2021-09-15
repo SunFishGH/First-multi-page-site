@@ -702,6 +702,9 @@ a:hover {
     top: 0;
     left: 0;
     z-index: 1000;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 @media screen and (max-width: 991px) {
@@ -781,7 +784,7 @@ a:hover {
     .main {
         padding-top: 7rem;
         padding-left: 0;
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -805,10 +808,10 @@ a:hover {
 
 @media screen and (max-width: 991px) {
     .profile {
-        margin-top: 4rem;
+        margin-top: 3.7rem;
         position: relative;
         border-bottom: 1px solid #1c1c1c;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -870,7 +873,6 @@ a:hover {
 }
 
 .profile__text {
-    padding: 3rem 0;
     margin: 3rem 0;
     font-size: 1.2rem;
     text-align: center;
@@ -883,9 +885,10 @@ a:hover {
 }
 
 .social {
-    height: 30px;
+    position: relative;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 5px;
     -ms-flex-pack: center;
     justify-content: center;
 }
@@ -897,7 +900,31 @@ a:hover {
 }
 
 .social__component {
-    margin: 0 0.75rem;
+    list-style: none;
+    margin: 4px;
+}
+
+.social__component a {
+    width: 45px;
+    height: 45px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #3137C9;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.social__component a:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    background: #2c31b4;
 }
 
 .btn {

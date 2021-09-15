@@ -136,7 +136,7 @@
             </div>
             <div class="sidebar__footer">
                 <a class="btn btn--red" href="works.html">Мои работы</a>
-                <button class="btn btn--blue" type="button">Написать мне</button>
+                <button class="btn btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
             </div>
         </aside>
 
@@ -169,9 +169,57 @@
 
     </div>
 
+    <div class="modal" id="story-modal">
+        <div class="modal__content modal__content--story">
+            <video class="modal__video" src="" poster="https://via.placeholder.com/420x580"></video>
+        </div>
+    </div>    <div class="modal" id="contact-modal">
+        <div class="modal__content modal__content--contact">
+    
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="close">
+            </button>
+    
+            <form class="form" action="/" method="post">
+                <div class="form__group form__group--md">
+                    <input class="form__control" type="text" placeholder="Ваше имя">
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group form__group--md">
+                    <input class="form__control" type="email" placeholder="Ваш e-mail">
+                    <span class="form__line"></span>
+                </div>
+            
+                <div class="form__group form__group--md">
+                    <textarea class="form__control form__control--textarea" placeholder="Ваше сообщение"></textarea>
+                </div>
+            
+                <div class="form__footer">
+                    <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
+                </div>
+            </form>
+    
+            <ul class="modal__footer">
+               <li>e-mail: <a href="mailto:petrovich@mail.ru"> petrovich@mail.ru</a></li>
+               <li>тел: <a href="tel:+78003000500">+7-800-3000-500</a></li>
+            </ul>
+        </div> <!--End modal__content-->
+    </div><!--End modal-->
     <div class="modal">
-        <video class="modal__video" src="" poster="https://via.placeholder.com/420x580"></video>
-    </div>
+        <div class="modal__content">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="close">
+            </button>
+    
+            <ul class="social">
+                <li class="social__component"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                <li class="social__component"><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                <li class="social__component"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="social__component"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </div> <!--End modal__content-->
+    </div><!--End modal-->
     <script src="assets/js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
