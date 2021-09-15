@@ -1,6 +1,8 @@
 .social{
-    height: 30px;
-    display: flex;
+
+    position: relative;
+    display:flex;
+    margin-top: 5px;
     justify-content: center;
 
     @include breakpoint($tablet-bp){
@@ -9,5 +11,25 @@
 }
 
 .social__component{
-    margin: 0 .75rem;
+    list-style: none;
+    margin: 4px;
+
+    a{
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $blue;
+        border-radius: 50%;
+        font-size: 1.5em;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.5s;
+
+        &:hover{
+            transform: rotate(360deg);
+            background: darken($blue, 5%);
+        }
+    }
 }
