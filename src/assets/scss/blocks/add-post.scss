@@ -6,6 +6,10 @@
     box-shadow: 0 15px 25px rgba($black, .45);
     border-radius: 5px;
 
+    @include breakpoint($mobile-bp){
+       padding: 1.5rem; 
+    }
+
 }
 
 .add-post__form{
@@ -39,6 +43,9 @@
     display: flex;
     justify-content: flex-end;
 
+    @include breakpoint($mobile-bp){
+        width: 9rem;
+    }
 }
 
 .add-post__file,
@@ -50,6 +57,11 @@
     cursor: pointer;
     border: none;
     transition: background-color .2s linear;
+
+    @include breakpoint($mobile-bp){
+        width: 3.4rem;
+        height: 3.4rem;
+    }
 }
 
 .add-post__file{

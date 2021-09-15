@@ -1,11 +1,17 @@
 .nav{
-    @include breakpoint($tablet-bp){
+    &--mobile{
         display: none;
     }
 
-    &--mobile{
-        display: block;
+    @include breakpoint($tablet-bp){
+        display: none;
+
+        &--mobile{
+            display: block;
+        }
     }
+
+
 }
 
 .nav__list{
@@ -13,7 +19,6 @@
 
     @include breakpoint($tablet-bp){
         flex-direction: column;
-
     }
 }
 

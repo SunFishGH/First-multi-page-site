@@ -14,7 +14,7 @@
     
     <title>Works</title>
 </head>
-<body class="show-sidebar">
+<body> <!--class="show-sidebar"-->
 
     <div class="page">
         <header class="header">
@@ -136,6 +136,12 @@
                         <li class="nav__item">
                             <a class="nav__link" href="#">Реклама</a>
                         </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="profile.html">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="signin.html">Авторизация</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -153,7 +159,10 @@
                 
                 <article class="work">
                     <div class="work__preview">
-                        <img src="assets/images/works/Work1.jpg" alt="">
+                        <picture>
+                            <source srcset="https://via.placeholder.com/575x200" media="(max-width: 575px)">
+                            <img src="assets/images/works/Work1.jpg" alt="">
+                        </picture>
                     </div>
                     <div class="work__content">
                         <h2 class="work__title">
