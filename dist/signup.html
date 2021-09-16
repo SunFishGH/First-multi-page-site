@@ -17,7 +17,7 @@
 </head>
 <body> <!--class="show-sidebar"-->
 
-    <div class="page">
+    <div class="page" id="page">
         <header class="header">
             <div class="header__left">
                 <nav class="nav">
@@ -50,7 +50,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="sidebarToggle">
                     <span></span>
                 </button>
             </div>
@@ -72,7 +72,7 @@
             </div>
         </header>
 
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
                 <img src="assets/images/sidebar-header.jpg" alt="sidebar-header">
             </div>
@@ -222,13 +222,13 @@
             </ul>
         </div> <!--End modal__content-->
     </div><!--End modal-->
-    <div class="modal">
+    <div class="modal" id="share-modal">
         <div class="modal__content">
             <button class="modal__close" type="button">
                 <img src="assets/images/close.svg" alt="close">
             </button>
-    
-            <ul class="social">
+            <h1 class="modal__title">Поделиться в социальных сетях</h1>
+            <ul class="social-mobile">
                 <li class="social__component"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                 <li class="social__component"><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
                 <li class="social__component"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

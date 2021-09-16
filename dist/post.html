@@ -17,7 +17,7 @@
 </head>
 <body> <!--class="show-sidebar"-->
 
-    <div class="page">
+    <div class="page" id="page">
         <header class="header">
             <div class="header__left">
                 <nav class="nav">
@@ -50,7 +50,7 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="sidebarToggle">
                     <span></span>
                 </button>
             </div>
@@ -72,7 +72,7 @@
             </div>
         </header>
 
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
                 <img src="assets/images/sidebar-header.jpg" alt="sidebar-header">
             </div>
@@ -147,7 +147,7 @@
                 <article class="post">
                     <div class="post__actions">
                         <a href="index.html">вернуться назад</a>
-                        <a href="#">
+                        <a href="#" data-modal="share-modal">
                             поделиться<img class="post__actions-icon" src="assets/images/repost.svg" alt="поделиться">
                         </a>   
                     </div>
@@ -249,7 +249,7 @@
                 
                             <form class="form" action="/" method="post">
                                 <div class="form__group">
-                                    <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст комментария"></textarea>
+                                    <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Текст комментария" data-autoresize></textarea>
                                     <span class="form__line"></span>
                                 </div>
                                 <button class="btn btn--blue btn--rounded btn--sm" type="submit">Отправить</button>
@@ -332,13 +332,13 @@
             </ul>
         </div> <!--End modal__content-->
     </div><!--End modal-->
-    <div class="modal">
+    <div class="modal" id="share-modal">
         <div class="modal__content">
             <button class="modal__close" type="button">
                 <img src="assets/images/close.svg" alt="close">
             </button>
-    
-            <ul class="social">
+            <h1 class="modal__title">Поделиться в социальных сетях</h1>
+            <ul class="social-mobile">
                 <li class="social__component"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
                 <li class="social__component"><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
                 <li class="social__component"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>

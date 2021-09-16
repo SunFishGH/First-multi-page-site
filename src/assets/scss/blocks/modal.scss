@@ -18,7 +18,11 @@
         display: flex;
     }
 }
-
+.modal__title{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
 .modal__content{
     width: 100%;
     max-width: 50rem;
@@ -40,6 +44,11 @@
         padding: 0;
         background: none;
     }
+
+    @include breakpoint($tablet-bp){
+        padding: 4rem;
+    }
+
 }
 
 .modal__close{

@@ -1,5 +1,5 @@
-.social{
-
+.social
+{
     position: relative;
     display:flex;
     margin-top: 5px;
@@ -8,6 +8,14 @@
     @include breakpoint($tablet-bp){
         display: none;
     }
+
+}
+
+.social-mobile{
+    position: relative;
+    display:flex;
+    margin-top: 5px;
+    justify-content: center;
 }
 
 .social__component{

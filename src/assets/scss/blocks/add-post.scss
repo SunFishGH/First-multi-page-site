@@ -14,14 +14,14 @@
 
 .add-post__form{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .add-post__textarea{
     display: block;
     flex-grow: 1;
     width: 75%;
-    height: 2.6rem;
+    height: 3.4rem;
     overflow: hidden;
 
     border: none;
@@ -83,4 +83,8 @@
         background-color: darken($blue, 5%)
     }
     
+}
+
+textarea{
+    resize:none;
 }
