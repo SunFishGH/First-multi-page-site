@@ -39,6 +39,10 @@ a {
     }
 }
 
+.hide{
+    display: none;
+}
+
 /* Blocks */
 @import "blocks/page";
 @import "blocks/header";

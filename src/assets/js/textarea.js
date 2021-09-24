@@ -8,5 +8,12 @@ textArea.forEach(item =>{
 
         $this.style.height= textAreaH + 'px';
         $this.style.height= $this.scrollHeight + 'px';
+        
+
+        if ($this.style.height.slice(0, -2) >= 150){
+            $this.style.overflow = "auto";
+        } else{
+            $this.style.overflow = "hidden";
+        }
     });
 });
