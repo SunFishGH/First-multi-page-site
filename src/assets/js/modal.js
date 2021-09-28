@@ -47,6 +47,7 @@ function closeModal(currentModal){
 
     setTimeout(() =>{
         currentModal.classList.remove('show');
-        body.classList.remove('no-scroll');  
+        body.classList.remove('no-scroll');
+        //form.classList.remove('hide');   надо убрать класс hide после закрытия модального окна
     }, 200);
 }
