@@ -1592,7 +1592,7 @@ textarea {
 .modal__content {
   width: 100%;
   max-width: 50rem;
-  padding: 8rem;
+  padding: 4rem;
   position: relative;
   background-color: #202020;
   border-radius: 0.5rem;
@@ -1659,14 +1659,16 @@ textarea {
   display: block;
 }
 
-.thanks__text {
-  margin: 2rem auto;
-}
+/*
+.thanks__title{
+    position: absolute;
+    top: 6rem;
 
-.thanks__title {
-  margin-top: 2rem;
+    @include breakpoint($tablet-bp){
+        top: 3.5rem;
+    }
 }
-
+*/
 .cabinet {
   display: flex;
 }

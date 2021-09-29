@@ -1900,6 +1900,14 @@ textarea {
     display: block;
 }
 
+.thanks__text {
+    margin: 2rem auto;
+}
+
+.thanks__title {
+    margin-top: 2rem;
+}
+
 .cabinet {
     display: -ms-flexbox;
     display: flex;

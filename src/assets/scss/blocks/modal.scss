@@ -26,7 +26,7 @@
 .modal__content{
     width: 100%;
     max-width: 50rem;
-    padding: 8rem;
+    padding: 4rem;
     position: relative;
 
     background-color: $primary;
@@ -104,11 +104,13 @@
 .show{
     display:block;
 }
-
-.thanks__text{
-    margin: 2rem auto;
-}
-
+/*
 .thanks__title{
-    margin-top: 2rem;
+    position: absolute;
+    top: 6rem;
+
+    @include breakpoint($tablet-bp){
+        top: 3.5rem;
+    }
 }
+*/
